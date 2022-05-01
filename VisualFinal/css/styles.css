@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 440px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: auto;
+}
+
+@font-face {
+  font-family: "GillSansBold";
+  src: url(fonts//GillSansBold.ttc);
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color:  white;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color:  white;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color:  white;
+text-decoration: none;
+}
+.nav {
+  background: rgb(53, 52, 52);
+  margin: 0 auto;
+  height: 378px;
+  background-color: none;
+  position: relative;
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* //box in nav */
+nav { 
+  position: relative;
+  /*r do a width of 70%*/
+  height: 200px;
+  margin: 0 auto;
+  border-bottom: solid 2px white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 150px;
+}
+
+/* title in nav */
+nav .title {
+  position: relative;
+  width: 369px;
+  height: 30px;
+  border: solid 2px white;
+}
+
+nav .title span {
+  position: absolute;
+  bottom: 5px;
+  width: 360px;
+  color: white;
+  font-family: "Gill Sans Bold";
+}
+/* links in the navigation */
+nav .links {
+  width: 350px;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav .links span a {
+  text-decoration: none;
+  color: black;
+}
+
+nav .links span {
+  color: #79addc;
+}
+
+@media only all and (max-height: 50px) {
+  .nav-wrapper nav {
+    position: left;
+    padding: 0 30px;
+  }
+
+  .nav-wrapper nav .links {
+    display: none;
+  }
+}
+@media only all and (max-width: 980px) {
+  .nav-wrapper nav {
+    padding: 0 30px;
+  }
+
+  .nav-wrapper nav .links {
+    display: none;
+  }
+}
+
+/* buttons */
+.btn {
+  border-radius: 0px;
+  position: relative;
+  text-align: center;
+  /* bottom: -134px; */
+  width: 140px;
+  height: 50px;
+   left: 250px; 
+  background-color: #79addc;
+  margin: 0 auto;
+}
+
+#container1 {
+  height: 100px;
+  width: 80%;
+  background: grey;
+  
+  margin: 0 auto;
+  bottom: 300px;
+  position: relative;
+}
+ .title2 {
+   font-size: large;
+   color: white;
+ }
+
+/*this div and button are  for the first box*/
+.btn {
+  bottom: -60px;
+  position: relative;
+  text-align: center;
+  border-radius: 20px;
+  border-color: white;
+}
+
+
+button {
+  padding: 8px;
+  position: relative;
+  bottom: -75px;
+  
+  padding-bottom: 15px;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+  width: 480px;
+  color: white;
+  background-color: #79addc;
+}
+
+
+
+
+svg {
+  border: solid 3px black;
+  background-color: aliceblue;
+      margin: 0 auto;
+       
+} 
+ .svg1 {
+  padding:30% left;
+  position: relative;
+  margin: 0 auto;
+  left: 90px;
+ }
+
+
+rect {
+  text-align: center;
+  left: 40px;
+}
+
+
+p{
+  margin: 4 auto;
+  padding: 20;
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+.form {
+  position: relative;
+  bottom: 600px;
+}
+
+/* maxwidth allows for a responsive screen*/
+footer {
+  /*maxwidth allows for a responsive screen*/
+  max-width: 100%;
+  font-size: 16px;
+  font-weight: "Ultra Bold" "Regular Italic";
+  height: 100px;
+  margin: 0 auto;
+  
+  bottom: -300px;
+  position: relative;
+}
+
+.words {
+  border-bottom: black;
+  position: relative;
+  width: 109px;
+  height: 42px;
+  border: solid 2px white;
+  left: 30px;
+  bottom: -30px;
+}
+
+.words span {
+  color: white;
+  display: flex;
+  position: relative;
+  text-align: left;
+  bottom: -10px;
+  width: 130px;
+}
+
+/* footer .fa {
+  padding: 11px;
+  font-size: 12px;
+  max-width: 35px;
+  text-align: center;
+  justify-items: space-around;
+  border-radius: 25%;
+}
+
+footer .fa .fa:hover {
+  opacity: 1;
+  justify-content: space-evenly;
+  position: relative;
+  width: 35px;
+} */
+
+
+
+
+footer span {
+ bottom: 100px;
+  left: 600px; 
+  width: 500px;
+  height: 200px;
+  
+  margin: 0 auto;
+}
+ footer{
+/* @media (max-width: 980px) {
+  {
+    flex-wrap: wrap;
+    /*if you wantit t in a column as t hte site gets smaller*/
+    width: 100%;
+    margin: top left auto;
+    padding: 80px;
+    background: #3b3d3f;
+    color: white
+  } 
