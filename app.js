@@ -1,5 +1,17 @@
 document.addEventListener('DOMContentLoaded', function(main) {
-  var tooltip =  (400000,342800,68000, 423000, 2271454, 125000, 585000, 95000, 140000,114000, 75500,90423, 75667,126667, 332280, 132);
+  var tooltip =  [120978,
+    47610,
+    243164,
+    57502,
+    122572,
+    83982,
+    85000,
+    41063,
+    134465,
+    96285,
+    239729,
+    75148];
+;
             
   d3.select('svg').selectAll('rect').data(tooltip).attr('height', function(d) {
       return d;
