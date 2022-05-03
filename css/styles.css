@@ -1,203 +1,180 @@
- 
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      
-      html,
-      body {
-        height: 440px;
-      }
-      
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6,
-      p {
-        margin-bottom: auto;
-      }
-      
-      @font-face {
-        font-family: "GillSansBold";
-        src: url(fonts//GillSansBold.ttc);
-      }
-      
-      a:link {
-        color: white;
-        text-decoration: none;
-      }
-      
-      /* visited link */
-      a:visited {
-        color:  white;
-        text-decoration: none;
-      }
-      
-      /* mouse over link */
-      a:hover {
-        color:  white;
-        text-decoration: none;
-      }
-      
-      /* selected link */
-      a:active {
-        color:  white;
-      text-decoration: none;
-      }
-      .nav {
-        background: rgb(53, 52, 52);
-        margin: 0 auto;
-        height: 378px;
-        background-color: none;
-        position: relative;
-        
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      
-      /* //box in nav */
-      nav { 
-        position: relative;
-        /*r do a width of 70%*/
-        height: 200px;
-        margin: 0 auto;
-        border-bottom: solid 2px white;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        bottom: 150px;
-      }
-      
-      /* title in nav */
-      nav .title {
-        position: relative;
-        width: 369px;
-        height: 30px;
-        border: solid 2px white;
-      }
-      
-      nav .title span {
-        position: absolute;
-        bottom: 5px;
-        width: 360px;
-        color: white;
-        font-family: "Gill Sans Bold";
-      }
-      /* links in the navigation */
-      nav .links {
-        width: 350px;
-        display: flex;
-        justify-content: space-around;
-      }
-      
-      nav .links span a {
-        text-decoration: none;
-        color: black;
-      }
-      
-      nav .links span {
-        color: #79addc;
-      }
-      
-      @media only all and (max-height: 50px) {
-        .nav-wrapper nav {
-          position: left;
-          padding: 0 30px;
-        }
-      
-        .nav-wrapper nav .links {
-          display: none;
-        }
-      }
-      @media only all and (max-width: 980px) {
-        .nav-wrapper nav {
-          padding: 0 30px;
-        }
-      
-        .nav-wrapper nav .links {
-          display: none;
-        }
-      }
-      
-      /* buttons */
-      .btn {
-        border-radius: 0px;
-        position: relative;
-        text-align: center;
-        /* bottom: -134px; */
-        width: 140px;
-        height: 50px;
-           left: 650px;  
-        background-color: #79addc;
-        margin: 0 auto;
-        
-       bottom: 300px;
-        border-radius: 20px;
-         position: relative;
-      }
-       .title2 {
-         font-size: large;
-         color: white;
-       }
-      
-      /*this div and button are  for the first box*/
-      
-      
-      
-      button {
-        padding: 8px;
-        position: relative;
-        bottom: -75px;
-        
-        padding-bottom: 15px;
-        border-radius: 20px;
-        text-align: center;
-        cursor: pointer;
-        width: 480px;
-        color: white;
-        background-color: #79addc;
-      }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  svg {
-    border: solid 3px black;
-    background-color: aliceblue;
-        margin: 0 auto;
-         
-  } 
-   .svg1 {
-    padding:30% left;
-    position: relative;
-    margin: 0 auto;
-    left: 90px;
-   }
-  
-  
-  rect {
-    text-align: center;
-    left: 40px;
-  }
-  
+html,
+body {
+  height: 440px;
+}
 
- circle {
-    text-align: center;
-    left: 40px;
-    
-    border-radius: 100px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: auto;
+}
+
+@font-face {
+  font-family: "GillSansBold";
+  src: url(fonts//GillSansBold.ttc);
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color:  white;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color:  white;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color:  white;
+text-decoration: none;
+}
+.nav {
+  background: rgb(53, 52, 52);
+  margin: 0 auto;
+  height: 378px;
+  background-color: none;
+  position: relative;
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* //box in nav */
+nav { 
+  position: relative;
+  /*r do a width of 70%*/
+  height: 200px;
+  margin: 0 auto;
+  border-bottom: solid 2px white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 150px;
+}
+
+/* title in nav */
+nav .title {
+  position: relative;
+  width: 369px;
+  height: 30px;
+  border: solid 2px white;
+}
+
+nav .title span {
+  position: absolute;
+  bottom: 5px;
+  width: 360px;
+  color: white;
+  font-family: "Gill Sans Bold";
+}
+/* links in the navigation */
+nav .links {
+  width: 350px;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav .links span a {
+  text-decoration: none;
+  color: black;
+}
+
+nav .links span {
+  color: #79addc;
+}
+
+@media only all and (max-height: 50px) {
+  .nav-wrapper nav {
+    position: left;
+    padding: 0 30px;
   }
-  p{
-    margin: 0 auto;
-    padding: 2%;
-    position: relative;
-    left: 80px;
-    font-size: large;
+
+  .nav-wrapper nav .links {
+    display: none;
   }
+}
+@media only all and (max-width: 980px) {
+  .nav-wrapper nav {
+    padding: 0 30px;
+  }
+
+  .nav-wrapper nav .links {
+    display: none;
+  }
+}
+
+/* buttons */
+.btn {
+  border-radius: 0px;
+  position: relative;
+  text-align: center;
+  /* bottom: -134px; */
+  width: 140px;
+  height: 50px;
+   left: 250px; 
+  background-color: #79addc;
+  margin: 0 auto;
+}
+
+#container1 {
+  height: 100px;
+  width: 80%;
+  background: grey;
+  
+  margin: 0 auto;
+  bottom: 300px;
+  position: relative;
+}
+ .title2 {
+   font-size: large;
+   color: white;
+ }
+
+/*this div and button are  for the first box*/
+.btn {
+  bottom: -60px;
+  position: relative;
+  text-align: center;
+  border-radius: 20px;
+  border-color: white;
+}
+
+
+button {
+  padding: 8px;
+  position: relative;
+  bottom: -75px;
+  
+  padding-bottom: 15px;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+  width: 480px;
+  color: white;
+  background-color: #79addc;
+}
 
 
 
@@ -208,7 +185,7 @@ svg {
       margin: 0 auto;
        
 } 
- .bar {
+ .svg1 {
   padding:30% left;
   position: relative;
   margin: 0 auto;
@@ -303,83 +280,13 @@ footer span {
   margin: 0 auto;
 }
  footer{
- 
+/* @media (max-width: 980px) {
+  {
     flex-wrap: wrap;
-   position: absolute;
+    /*if you wantit t in a column as t hte site gets smaller*/
     width: 100%;
     margin: top left auto;
     padding: 80px;
     background: #3b3d3f;
-    color: white;
-    bottom: -1200px;
+    color: white
   } 
-  footer.one{
- 
-    flex-wrap: wrap;
-   position: absolute;
-    width: 100%;
-    margin: top left auto;
-    padding: 80px;
-    background: #3b3d3f;
-    color: white;
-    bottom: -1200px;
-  } 
-
-  .bar{
-    fill: navy;
-  }
-  .bar :hover{
-    font: 10px sans-serif;
-    fill: palevioletred;
-    text-align: right;
-    padding: 3px;
-    margin: 1px;
-    color: white;
-    
-  }
-   
-   #tooltip{
-    position: absolute;
-    width: auto;
-    height:auto;
-    padding: 10px;
-    background-color: rgba(240, 238, 234, 0.28);
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    -webkit-box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
-    -moz-box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
-    box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
-    pointer-events: none;
-  }
-  #tooltip.hidden{
-    display: none;
-  }
-  #tooltip p{
-    margin: 0;
-    font-family: sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-  } 
-
-  .chart div {
-    font: 10px sans-serif;
-    background-color: steelblue;
-    text-align: right;
-    width: 50;
-    max-height: 300px;
-    padding: 3px;
-    margin: 1px;
-    color: white;
-    
-  }
-  
-  .chart  :hover{
-    font: 10px sans-serif;
-    background-color: green;
-    text-align: right;
-    padding: 3px;
-    margin: 1px;
-    color: white;
-    
-  }

@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: "SemiBold Italic";
+  src: url(fonts//GillSansReg.ttc);
+}
+.nav-wrapper {
+  background-color: none;
+  height: 80px;
+  width: 100%;
+}
+
+nav {
+  max-width: 980px;
+  /*r do a width of 70%*/
+  height: 150px;
+  background-color: white;
+  margin: 0 auto;
+  border-bottom: solid 2px black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  position: relative;
+  width: 69px;
+  height: 30px;
+  border: solid 2px black;
+}
+
+nav .logo span {
+  position: relative;
+  bottom: -6px;
+  width: 9120px;
+  color: black;
+  font-size: 20px;
+  font-weight: 20px;
+  font-family: "Gill Sans Bold";
+}
+
+nav .links {
+  width: 350px;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav .links span a {
+  text-decoration: none;
+  color: black;
+}
+
+nav .links span {
+  color: #79addc;
+}
+
+@media only all and (max-height: 50px) {
+  .nav-wrapper nav {
+    position: left;
+    padding: 0 30px;
+  }
+
+  .nav-wrapper nav .links {
+    display: none;
+  }
+}
+@media only all and (max-width: 980px) {
+  .nav-wrapper nav {
+    padding: 0 30px;
+  }
+
+  .nav-wrapper nav .links {
+    display: none;
+  }
+}
+.history {
+  max-width: 980px;
+  min-height: 378px;
+  margin: 0 auto 0 auto;
+  position: relative;
+  bottom: 30px;
+  font-weight: 0;
+}
+
+h2 {
+  max-width: 980px;
+  min-height: 378px;
+  margin: 0 auto 0 auto;
+  position: relative;
+  bottom: -140px;
+  font-weight: 0;
+  font-size: 60px;
+  text-decoration: underline;
+}
+
+.history .quote {
+  font-size: 30px;
+  position: relative;
+  bottom: -240px;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.history .history-title {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: bold;
+  border-bottom: solid 2px #070404;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-top: 15;
+  position: relative;
+  bottom: -80px;
+  font-size: 30px;
+}
+
+.history .history-title3 p {
+  position: relative;
+  font-size: 16px;
+  margin-top: 50px;
+  bottom: 450px;
+  padding-top: 60px;
+  width: 800px;
+}
+
+.history .history-title1 p {
+  margin-top: 50px;
+  position: relative;
+  bottom: -200px;
+  padding-top: 60px;
+  font-size: 16px;
+  width: 450px;
+  left: 300px;
+}
+
+.history .history-title2 p {
+  margin-top: 50px;
+  position: relative;
+  bottom: -200px;
+  padding-top: 60px;
+  font-size: 16px;
+  width: 450px;
+  left: 300px;
+}
+
+.hero1 .hero-title {
+  width: 250px;
+  height: 180px;
+  background-image: linear-gradient(to bottom, rgba(255, 210, 64, 0), rgba(255, 210, 64, 0)), url(../images/about-client-01-original.jpg);
+  margin: 0 auto;
+  position: relative;
+  bottom: 330px;
+  left: -380px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero2 .hero-title2 {
+  width: 250px;
+  height: 180px;
+  background-image: linear-gradient(to bottom, rgba(255, 210, 64, 0), rgba(255, 210, 64, 0)), url(../images/about-client-02.jpg);
+  margin: 0 auto;
+  position: relative;
+  bottom: 260px;
+  left: -380px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  /*maxwidth allows for a responsive screen*/
+  max-width: 100%;
+  font-size: 16px;
+  font-weight: "Ultra Bold" "Regular Italic";
+  height: 100px;
+  margin: 0 auto;
+  background-color: #79addc;
+  bottom: -100px;
+  position: relative;
+}
+
+.words {
+  border-bottom: black;
+  position: relative;
+  width: 109px;
+  height: 42px;
+  border: solid 2px white;
+  left: 30px;
+  bottom: -30px;
+}
+
+.words span {
+  color: white;
+  display: flex;
+  position: relative;
+  left: 10px;
+  bottom: -10px;
+  width: 130px;
+}
+
+footer .fa {
+  padding: 11px;
+  font-size: 12px;
+  max-width: 35px;
+  text-align: center;
+  justify-items: space-around;
+  border-radius: 25%;
+}
+
+footer .fa .fa:hover {
+  opacity: 1;
+  justify-content: space-evenly;
+  position: relative;
+  width: 35px;
+}
+
+footer .fa .fa-facebook {
+  background: white;
+  color: #79addc;
+  position: relative;
+  bottom: 44px;
+  left: 1220px;
+}
+
+footer .fa .fa-instagram {
+  background: white;
+  color: #79addc;
+  position: relative;
+  bottom: 77px;
+  left: 1262px;
+}
+
+footer .fa .fa-twitter {
+  background: white;
+  color: #79addc;
+  position: relative;
+  bottom: 110px;
+  left: 1306px;
+}
+
+footer .Copyright {
+  color: white;
+  position: relative;
+  bottom: 100px;
+  left: 580px;
+  width: 500px;
+  background-color: #79addc;
+}
+
+@media (max-width: 980px) {
+  footer {
+    flex-wrap: wrap;
+    /*if you wantit t in a column as t hte site gets smaller*/
+    width: 80%;
+    margin: top left auto;
+    padding: 80px;
+  }
+}
