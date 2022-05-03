@@ -10,105 +10,27 @@
     <link rel="preconnect" href="https://www.google.com">
 <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="app.css"/>
-    <script src="d3.v5.js"></script>
+
     
     <script src="https://d3js.org/d3.v3.min.js"></script>
-    
     <script>
       const onloadCallback = function() {
         console.log("reCAPTCHA has loaded!");
         grecaptcha.reset();
       };
     </script>
+   
       <script async src="https://www.google.com/recaptcha/api.js">
     </script>
     <script>
       function onSubmit(token) {
         document.getElementById("demo-form").submit();
-      }</script>
+      }
       <script src="https://www.google.com/recaptcha/api.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function(main) {
-      const canvas = d3.select("canva");
-      
-
-      var data = [
-     "Staff Data Scientist" ,
-     " Research Scientist",
-     " Product Data Analyst",
-     ,
-     " Principal Data Scientist"
-     ," Principal Data Engineer"
-     ," Principal Data Analyst"
-     ," ML Engineer",
- ,    " Marketing Data Analyst"
-,     " Manager Data Science"
- ,   "  Machine Learning Scientist"
-  ,  "  Machine Learning Scientist"
-   ,  " Machine Learning Infrastructure Engineer"
-    , " Machine Learning Engineer"
-     ," Lead Data Scientist"
-     ," Lead Data Engineer",
-     " Lead Data Analyst",
-     " Head of Data Science",
-    "  Head of Data",
-    "  Financial Data Analyst",
-    "  Finance Data Analyst",
-      "Director of Data Science",
-     " Director of Data Engineering",
-     " Data Specialist",
-    "  Data Scientist",
-    "  Data Scientist",
-     " Data Science Manager",
-     " Data Science Engineer",
-     " Data Science Consultant",
-     " Data Engineering Manager",
-     " Data Engineer",
     
-     " Data Architect",
-     " Data Analytics Manager",
-      "Data Analytics Engineer",
-     " Data Analyst",
-     " Computer Vision Software Engineer",
-     " Computer Vision Engineer",
-     " Computer Vision Engineer",
-     " Computer Vision Engineer",
-      "Cloud Data Engineer",
-     " Business Data Analyst",
-      
-      "Big Data Engineer",
-      "Big Data Architect",
-      "BI Data Analyst",
-     " Applied Machine Learning Scientist",
-      "Applied Data Scientist",
-      "AI Scientist",
-      
-      "3D Computer Vision Researcher"
-    ];
-    var data = 
-    ["CT",
-"FT = full time",
-"PT = part time",
-"CT = temporary",
-];
-
-     
-var x = d3.scale.linear(data)
-    .range([ 0,.1]);
-
-d3.select(".chart")
-    .selectAll("div")
-    .data(data)
-    .enter().append("div")
-    .style("width", function(d) { return x(d) + "px"; })
-    .text(function(d) { return d; });
-      console.log(rect); 
-      });
     </script>
-    
 </head>
-<body >
+<body>
     <div class="nav">
         <nav>
           <div class="title">
@@ -116,11 +38,11 @@ d3.select(".chart")
           </div>
           <ul>
             <div class="links"><br><br>
-              <link><a href="index.html">Graph1
-                <span> | </span>
-                <a href="about.html">Graph2
-                <span> | </span>
-                <a href="graph1.html">Graph3
+              <link><a href="index.html">Home
+              <span> | </span>
+              <a href="about.html">About
+              <span> | </span>
+              <a href="graph1.html">Graphs
                 <span> | </span>
               </a></link>
           </ul>
@@ -140,19 +62,13 @@ d3.select(".chart")
 </div>    
    
 
-<div onload="main()"  id="tooltip">
- 
       
-      <div class="chart"  id="tooltip"> <circle></circle>
-        <circle></circle>
-       </div></div>
         <br>
         <footer>
          <span class="Copyright">Created By Oluwatishe Elesinnla 2022.</span> 
-       </footer>
+        </footer>
 
 
 </body>
-<script src="app.js"></script>  
 
-</html> 
+</html>
